@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div id="header" class="row">
+    <div class="u-full-width">
+        <div id="nav" class="row">
+            <span id="home" class="u-pull-left">
+                <a href="../index.html">
+                Home
+                </a>
+            </span>
+            <div class="u-pull-right">
+                <span class="menu-item-right">
+                    <a href="about.html"> About</a>
+                    <a target="_blank" href="../pdf/VMarchLiam Albright Resume.pdf"> Resume</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main">
+
+  <h1>Systems Analysis & Data Portal Design </h1>
+  <hr>
+
+  <h2> System Requirement Specification</h2>
+  <p>Creating a technical solution for The Enterprise Reporting and Analytics team within UW-IT Information Management which services the UW via several portals. 
+    My team and I proposed a redesign of the system to better support all stakeholders involved. 
+  </p>
+
+
+<!-- Portfolio Gallery Grid -->
+
+
+<div class="column">
+  <div class="content">
+    <h3>My Work</h3>
+        <li>Conducted product research including literature review, competitive analysis, and user research.</li>
+        <li>Refined Vision, Scope, final product specifications, and created use cases.</li>
+
+    </div>
+</div>
+<div class="column">
+  <div class="content">
+    <h3>Results</h3>
+    <li>Created a solution specification which details our proposed solution and its value to stakeholders.</li>
+    <li>Recived a 95% grade of the final project deliverables.</li>
+    </div>
+</div>
+
+<div class="row">
+
+  <div class="uses">
+    <div class="container">
+             <div class="row2">
+           
+                <div class="use2 col-md-6 col-lg-push-3">
+                  <div class="uses-content2">
+                    <a target="_blank" href="../pdf/solSpecs.pdf">
+
+                        <img class="portfolio-image" src="../images/systit.png">
+                          <h3>Link to full report</h3>
+                      </a>
+                  </div>
+
+             </div>
+
+            
+      
+
+   
+    
+    
+
+            </div>
+     
+         
+    </div>
+ </div>
+
+
+
+
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+<div id="footer" class="row">
+	<div class="twelve columns max-height flex-container">
+		<div class="flex-item">
+			<div class="footer-content">
+				Liam Albright <br>
+				Researcher & Developer
+			</div>
+		</div>
+		<div class="flex-item">
+			<div class="footer-content">
+				Central District <br>
+				98122
+			</div>
+		</div>
+		<div class="flex-item">
+			<div class="footer-content">
+				albrightliam56@gmail.com
+			</div>
+		</div>
+		<div class="flex-item">
+			<div class="footer-content">
+				<a href="https://www.linkedin.com/in/liam-albright-090166a4/" class="fa fa-linkedin"></a>
+				<a href="https://github.com/LiamAlbright" class="fa fa-github-square"></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+<link href="../css/normalize.css" rel="stylesheet">
+<link href="../css/skeleton.css" rel="stylesheet">
+<link href="../css/css" rel="stylesheet">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/baguetteBox.min.css">
+<link rel="stylesheet" href="../css/aos.css">
+<link rel="stylesheet" href="../css/site.css">
+</html>

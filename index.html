@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="Hugo 0.58.2">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta property="og:url" content="https://tanukhandelwal.com">
+        <title>Liam Albright</title>
+        <style type="text/css">
+            .no-fouc {
+                opacity: 0.0;
+            }
+        </style>
+        <script type="x-shader/x-vertex" id="wrapVertexShader">
+    varying vec4 vcolor;
+    uniform vec3 resolution;
+	void main() {
+		vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+		gl_Position = projectionMatrix * mvPosition;
+		gl_PointSize = (fract(position.x) + 1.0) * 8.0;
+        vcolor = vec4(
+            clamp(mod(position.y, 0.2) + 0.3, 0.3, 0.5),
+            0.15,
+            clamp(mod(position.x, 0.4) + 0.6, 0.6, 1.0),
+            clamp(mod(position.x, 0.2) + 0.3, 0.3, 0.5)
+        );
+	}
+</script>
+<script type="x-shader/x-fragment" id="wrapFragmentShader">
+	uniform sampler2D texture;
+    varying vec4 vcolor;
+	void main() {
+		vec4 textureColor = texture2D(texture, gl_PointCoord);
+		if (textureColor.a < 0.3) {
+            discard;
+        }
+        gl_FragColor = textureColor * vcolor;
+	}
+</script>
+
+    </head>
+    <body class="no-fouc" data-gr-c-s-loaded="true" data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0" style="opacity: 1;">
+        <div id="header" class="row">
+    <div class="u-full-width">
+        <div id="nav" class="row">
+            <span id="home" class="u-pull-left">
+                <a href="../index.html">
+                Home
+                </a>
+            </span>
+            <div class="u-pull-right">
+                <span class="menu-item-right">
+                    <a href="./html/about.html"> About</a>
+                    <a target="_blank" href="./pdf/VMarchLiam Albright Resume.pdf"> Resume</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="header">
+            <div class="name">Liam Albright</div>
+            <canvas id="scene" class="twelve columns canvas" width="1905" height="627" style="width: 1905px; height: 627.82px;"></canvas>
+        </div>
+        <div class="spacer">&nbsp;</div>
+        <div class="header-body">
+            I am a creator working in the cross-section of Human-Computer Interaction and Data science, based in Seattle, WA
+            <hr>
+            <ul>
+                <li>
+                    My passion is creating impactful products and solutions that are
+                     built with Empathy,  Meticulousness, and Audacity
+                </li>
+                <li>
+                    In pursuing this passion in professional and academic settings I have taken on several roles and wore different hats.
+                     These jobs include Product Manager, UX researcher, Android Developer, or Data Analyst. 
+                </li>
+                <li>
+                    I believe in teamwork and being a teammate that can empower those on a 
+                    team to be their best selves and to bring people together to work towards a common goal.
+                </li>
+                <li>
+                    In my currently I am working as a Research Assistant at 
+                    DUB Institute: Human-Computer Interaction and Design, At the University of Washington
+                </li>
+            </ul>
+            <hr>
+        </div>
+        <div id="portfolio">
+        
+
+            <div class="portfolio-item aos-init" data-aos="fade-in" style="box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;">
+                <div>
+                    <div>
+                        
+                        <a href="./html/chiPaper.html">
+                        
+                            <img class="portfolio-image" src="./images/chi2020_banner.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item-caption">Rethinking Design for neurodiverse communities </div>
+            </div>
+
+            
+          
+        
+            
+            <div class="portfolio-item aos-init" data-aos="fade-in" style="box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;">
+                <div>
+                    <div>
+                        
+                        <a href="./html/modDesign.html">
+                        
+                            <img class="portfolio-image" src="./images/Bellevue1.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item-caption">Designing a mobile OS for resource-constrained communities </div>
+            </div>
+            
+        
+            
+            <div class="portfolio-item aos-init" data-aos="fade-in" style="box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;">
+                <div>
+                    <div>
+                        
+                        <a href="./html/webdevex.html">
+                        
+                            <img class="portfolio-image" src="./images/webdevtit.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item-caption">Creating a website that adds visuals to music </div>
+            </div>
+            
+        
+            
+            <div class="portfolio-item aos-init" data-aos="fade-in" style="box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;">
+                <div>
+                    <div>
+                        
+                        <a href="./html/systemanalysis.html">
+                        
+                            <img class="portfolio-image" src="./images/systit.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item-caption">Redesigning a data portal for UW analytics </div>
+            </div>
+            
+            <div class="portfolio-item aos-init" data-aos="fade-in" style="box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;">
+                <div>
+                    <div>
+                        
+                        <a href="./html/dadudet.html">
+                        
+                            <img class="portfolio-image" src="./images/daduimgpng2.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item-caption">Helping homeowners find value</div>
+            </div>
+            
+            
+        
+        </div>
+        <div id="social-media" class="twelve columns">
+</div>
+<div id="footer" class="row">
+	<div class="twelve columns max-height flex-container">
+		<div class="flex-item">
+			<div class="footer-content">
+				Liam Albright <br>
+				Researcher & Developer
+			</div>
+		</div>
+		<div class="flex-item">
+			<div class="footer-content">
+				Central District <br>
+				98122
+			</div>
+		</div>
+		<div class="flex-item">
+			<div class="footer-content">
+				albrightliam56@gmail.com
+			</div>
+		</div>
+		<div class="flex-item">
+			<div class="footer-content">
+				<a href="https://www.linkedin.com/in/liam-albright-090166a4/" class="fa fa-linkedin"></a>
+				<a href="https://github.com/LiamAlbright" class="fa fa-github-square"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<link href="./css/normalize.css" rel="stylesheet">
+<link href="./css/skeleton.css" rel="stylesheet">
+<link href="./css/css" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/baguetteBox.min.css">
+<link rel="stylesheet" href="./css/aos.css">
+<link rel="stylesheet" href="./css/site.css">
+<script src="./javascript/popmotion-pose.js"></script>
+<script src="./javascript/TweenMax.min.js"></script>
+<script src="./javascript/three.min.js"></script>
+<script src="./javascript/baguetteBox.min.js"></script>
+<script src="./javascript/site.js"></script>
+<script src="./javascript/aos.js"></script>
+<script async="" src="./javascript/js"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-127057009-1');
+</script>
+    
+
+<div role="dialog" id="baguetteBox-overlay"><div id="baguetteBox-slider"></div><button type="button" id="previous-button" aria-label="Previous" class="baguetteBox-button"><svg width="44" height="60"><polyline points="30 10 10 30 30 50" stroke="rgba(255,255,255,0.5)" stroke-width="4" stroke-linecap="butt" fill="none" stroke-linejoin="round"></polyline></svg></button><button type="button" id="next-button" aria-label="Next" class="baguetteBox-button"><svg width="44" height="60"><polyline points="14 10 34 30 14 50" stroke="rgba(255,255,255,0.5)" stroke-width="4" stroke-linecap="butt" fill="none" stroke-linejoin="round"></polyline></svg></button><button type="button" id="close-button" aria-label="Close" class="baguetteBox-button"><svg width="30" height="30"><g stroke="rgb(160,160,160)" stroke-width="4"><line x1="5" y1="5" x2="25" y2="25"></line><line x1="5" y1="25" x2="25" y2="5"></line></g></svg></button></div></body></html>

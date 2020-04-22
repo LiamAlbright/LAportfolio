@@ -1,0 +1,562 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #444;
+}
+
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.header {
+  height: 300px;
+  font-size: 50px;
+  text-align: center;
+  color: #3c3b3b;
+  width: 100%;
+}
+
+.spacer {
+  line-height: 3em;
+}
+
+.header-body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
+  color: #6f6868;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.header-body hr {
+  width: 95%;
+  margin-top: 3.5rem;
+  border-top: 1px solid #e1e1e1;
+}
+
+.header-body li {
+  list-style: none;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.name {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  top: 40%;
+  width: 100%;
+  color: #fff;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 50px;
+}
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 1px;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-right: 5px;
+  padding-left: 5px;
+  min-height: 80vh;
+}
+
+@media screen and (min-width: 800px) {
+  #sonosite {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .portfolio-content {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .portfolio-item {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header-body {
+    width: 90%;
+  }
+
+  .portfolio-item {
+    width: 100%;
+  }
+}
+
+.portfolio-content p {
+  margin-bottom: 0.5em;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-size: 02.5em;
+}
+
+.portfolio-content li {
+  margin-bottom: 1;
+}
+
+.portfolio-content h5 {
+  text-align: center;
+  margin-bottom: 0.2em;
+  margin-top: 1em;
+}
+
+.portfolio-content .image-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-content .grid-image {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.portfolio-content .image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-content .portfolio-image-caption {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+}
+
+.image-caption {
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.portfolio-item {
+  border: 0.05px solid;
+  background-color: white;
+  border-color: lightgrey;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  box-shadow: 0px 0px 0px 0px #fff;
+}
+
+.portfolio-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.portfolio-image {
+  display: flex;
+  color: white;
+  align-self: center;
+}
+
+img {
+  display: flex;
+  height: auto;
+  max-width: 100%;
+}
+
+#footer {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #3BB9FF;
+}
+
+.footer-content {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.fa {
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.fa-github-square {
+  color: white;
+}
+
+.menu-item-right {
+  font-size: 20px;
+  font-family: lora, times, serif;
+  word-spacing: 20px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #7c238c;
+}
+
+a:visited,
+a:link,
+a:active {
+  text-decoration: none !important;
+  color: #6f6868;
+}
+
+a:hover {
+  color: #6f6868;
+  text-decoration: underline;
+}
+
+.footer-content a {
+  text-decoration: none !important;
+  color: white;
+}
+
+#nav {
+  padding-top: 30px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+
+#home {
+  font-family: lora, times, serif;
+  font-size: 20px;
+}
+
+.max-height {
+  height: 100%;
+}
+
+#scene {
+  width: 100%;
+  height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-content-title {
+  font-size: 46px;
+  font-family: "karla", sans-serif;
+  color: #fff;
+  text-shadow: #2f1111 3px 3px 4px;
+}
+
+.portfolio-content-subheader {
+  font-size: 22px;
+  font-family: "karla", sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.portfolio-content-heading {
+  font-size: 28px;
+  font-family: "Karla", sans-serif;
+  color: #3e3f41;
+}
+
+.format {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.portfolio-content-list li {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+.portfolio-content-visual {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ul.b li {
+  display: list-item;
+}
+
+.image-portfolio {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-content-projects {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
+  margin-bottom: 5px;
+}
+
+.columns .row {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0;
+}
+
+.bullet {
+  display: inline;
+}
+
+.bullet-text {
+  line-height: 25px;
+  font-size: 30px;
+  margin-left: 10px;
+  vertical-align: super;
+  color: #6b6b6b;
+}
+
+.bullet-description {
+  margin-bottom: 10px;
+  padding-left: 58px;
+}
+
+.portfolio-about-caption {
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  flex-grow: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 19px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+}
+
+.text-format {
+  text-indent: 50px;
+}
+
+
+.security-body {
+  align-items: center;
+  text-align: left;
+  max-width: 900px;
+  font-size: 17px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.section-breaks-heading {
+  display: flex;
+  width: 100%;
+  background-color: #f8f9fa;
+  min-height: 300px;
+  font-size: 50px;
+  font-family: "karla", sans-serif;
+  color: #322f4e;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.title-grid {
+  display: flex;
+  background-color: #f8f9fa;
+  margin-bottom: 1em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 50px;
+  text-align: center;
+  min-height: 300px;
+  align-content: center;
+  font-family: "karla", sans-serif;
+}
+
+.title-grid-label {
+  width: 50%;
+  margin: 0;
+}
+
+.title-grid-value {
+  width: 50%;
+  margin: 0;
+  font-size: 22px;
+}
+
+.security-body h1 {
+  font-family: "karla", sans-serif;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 42px;
+}
+
+.content-format {
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  margin-right: 8%;
+  margin-left: 8%;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  background: url("/images/SecurityHeader1.png") no-repeat center;
+  min-height: 400px;
+  margin-bottom: 2%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-item-caption {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  color: #2f2d2d;
+  text-align: center;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.section-highlight {
+  background-color: #f8f9fa;
+}
+
+#role-duration {
+  font-size: 20px;
+}
+
+
+/*
+added from other works css
+*/
+.use {
+  margin-bottom: 15px;
+  display: block;
+  float: none;    
+  margin: 0 auto;    
+}
+.uses::after  {
+background-color: #EBEBEB;
+padding: 15px 0px;
+
+content: "";
+clear: both;
+display: table;
+
+}
+.uses-content-copy {
+padding-left: 20px;
+vertical-align: top;
+
+}
+
+
+
+.uses-content {
+  min-height: 320px;
+  background-color: white;
+  border: 1px solid #DFDFDF;
+  border-radius: 3px;
+  text-align: left ;
+  margin-top: 25px;   
+
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+
+  width: 33%;
+  height: 23%;
+
+
+}
+.uses-content2 {
+  background-color: white;
+  border: 1px solid #DFDFDF;
+  border-radius: 3px;
+  text-align: left ;
+  margin-top: 25px;   
+
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+
+  width: 70%;
+  height: 60%;
+
+}
+
+
+.uses-content2  img {
+
+  width: 100%;
+  height: 100%;
+}
+
+
+h2.uses_header{
+  text-align: center;
+}
+
+.use img {
+
+  width: 250px;
+  height: 520px;
+}
+
+
